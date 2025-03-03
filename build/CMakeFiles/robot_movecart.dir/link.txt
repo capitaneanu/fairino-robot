@@ -1,1 +1,0 @@
-/usr/bin/g++ -g CMakeFiles/robot_movecart.dir/src/robot_movecart.cpp.o -o bin/robot_movecart  -Wl,-rpath,/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/lib /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/lib/libfairino.so 
