@@ -50,7 +50,7 @@ int main(int argc, char **argv)
     int8_t gstatus = 1;
 
     std::this_thread::sleep_for(std::chrono::milliseconds(500));
-    robot.MoveGripper(index, gpos, 50, 40, max_time, block, 0, 0, 0, 0);
+    robot.MoveGripper(index, gpos, 80, 50, max_time, block, 0, 0, 0, 0);
     std::this_thread::sleep_for(std::chrono::milliseconds(500));
 
     printf("\n");

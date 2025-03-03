@@ -51,35 +51,35 @@ int main(int argc, char **argv)
     robot.GetActualTCPNum(flag, &tool);
     robot.GetRobotCurJointsConfig(&config);
 
-    robot.SetSpeed(40);
+    robot.SetSpeed(50);
     // printf("\n");
 
-    robot.GetActualTCPPose(flag, &tcp);
-    printf("GetActualTCPPose after:\t\t%f,%f,%f,%f,%f,%f\n", tcp.tran.x, tcp.tran.y, tcp.tran.z, tcp.rpy.rx, tcp.rpy.ry, tcp.rpy.rz);
-    robot.GetActualToolFlangePose(flag, &flange);
-    printf("GetActualToolFlangePose after:\t%f,%f,%f,%f,%f,%f\n\n", flange.tran.x, flange.tran.y, flange.tran.z, flange.rpy.rx, flange.rpy.ry, flange.rpy.rz);
+    // robot.GetActualTCPPose(flag, &tcp);
+    // printf("GetActualTCPPose after:\t\t%f,%f,%f,%f,%f,%f\n", tcp.tran.x, tcp.tran.y, tcp.tran.z, tcp.rpy.rx, tcp.rpy.ry, tcp.rpy.rz);
+    // robot.GetActualToolFlangePose(flag, &flange);
+    // printf("GetActualToolFlangePose after:\t%f,%f,%f,%f,%f,%f\n\n", flange.tran.x, flange.tran.y, flange.tran.z, flange.rpy.rx, flange.rpy.ry, flange.rpy.rz);
 
     int xp = xpos;
-    robot.StartJOG(4, 1, xpos >= 0 ? 1 : 0, 50.0, 50.0, xpos >= 0 ? xp : -xp);
+    robot.StartJOG(4, 1, xpos >= 0 ? 1 : 0, 80.0, 80.0, xpos >= 0 ? xp : -xp);
     printf("Starjog X command success.\n");
-    std::this_thread::sleep_for(std::chrono::milliseconds(3000));
+    std::this_thread::sleep_for(std::chrono::milliseconds(2000));
     robot.StopJOG(5);
 
     int yp = ypos;
-    robot.StartJOG(4, 2, ypos >= 0 ? 1 : 0, 50.0, 50.0, ypos >= 0 ? yp : -yp);
+    robot.StartJOG(4, 2, ypos >= 0 ? 1 : 0, 80.0, 80.0, ypos >= 0 ? yp : -yp);
     printf("Starjog Y command success.\n");
-    std::this_thread::sleep_for(std::chrono::milliseconds(3000));
+    std::this_thread::sleep_for(std::chrono::milliseconds(2000));
     robot.StopJOG(5);
 
     int zp = zpos;
-    robot.StartJOG(4, 3, zpos >= 0 ? 1 : 0, 50.0, 50.0, zpos >= 0 ? zp : -zp);
+    robot.StartJOG(4, 3, zpos >= 0 ? 1 : 0, 60.0, 60.0, zpos >= 0 ? zp : -zp);
     printf("Starjog Z command success.\n");
-    std::this_thread::sleep_for(std::chrono::milliseconds(6000));
+    std::this_thread::sleep_for(std::chrono::milliseconds(4000));
     robot.StopJOG(5);
 
     printf("\n");
-    robot.GetActualTCPPose(flag, &tcp);
-    printf("GetActualTCPPose after:\t\t%f,%f,%f,%f,%f,%f\n", tcp.tran.x, tcp.tran.y, tcp.tran.z, tcp.rpy.rx, tcp.rpy.ry, tcp.rpy.rz);
+    // robot.GetActualTCPPose(flag, &tcp);
+    // printf("GetActualTCPPose after:\t\t%f,%f,%f,%f,%f,%f\n", tcp.tran.x, tcp.tran.y, tcp.tran.z, tcp.rpy.rx, tcp.rpy.ry, tcp.rpy.rz);
 
     return 0;
 }
