@@ -1,0 +1,528 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						25,
+						26,
+						27,
+						28,
+						29,
+						30,
+						31,
+						32,
+						33,
+						34,
+						35,
+						36,
+						37,
+						38,
+						39,
+						40,
+						41,
+						42,
+						43,
+						44,
+						45,
+						46,
+						47,
+						48,
+						49,
+						50,
+						51,
+						52
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "example",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						25,
+						26,
+						27,
+						28,
+						29,
+						30,
+						31,
+						32,
+						33,
+						34,
+						35,
+						36,
+						37,
+						38,
+						39,
+						40,
+						41,
+						42,
+						43,
+						44,
+						45,
+						46,
+						47,
+						48,
+						49,
+						50,
+						51,
+						52
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "brake_off::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-brake_off-Debug-3edabf883bc24da4c67c.json",
+					"name" : "brake_off",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "brake_on::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-brake_on-Debug-d11fb45f15d1ee833a27.json",
+					"name" : "brake_on",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fr5-0::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fr5-0-Debug-ccbe53008b6436da16c8.json",
+					"name" : "fr5-0",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fr5-1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fr5-1-Debug-85f95636375dcd6838d6.json",
+					"name" : "fr5-1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fr5-2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fr5-2-Debug-2ab2d62516222270de9c.json",
+					"name" : "fr5-2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fr5-cart-move::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fr5-cart-move-Debug-86a03d3c0c614c78ff1e.json",
+					"name" : "fr5-cart-move",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fr5-demo::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fr5-demo-Debug-9ebbe65b1160479edd7e.json",
+					"name" : "fr5-demo",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fr5-jog::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fr5-jog-Debug-b026807b2dc7d22bca51.json",
+					"name" : "fr5-jog",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fr5-jog-stop::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fr5-jog-stop-Debug-e3b53a2038f7673bd258.json",
+					"name" : "fr5-jog-stop",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fr5-jog-x::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fr5-jog-x-Debug-5e39c49bcf843aca896a.json",
+					"name" : "fr5-jog-x",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fr5-jog-y::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fr5-jog-y-Debug-520314b496e90965eee6.json",
+					"name" : "fr5-jog-y",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fr5-jog-z::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fr5-jog-z-Debug-5488b5c08b946c0f2878.json",
+					"name" : "fr5-jog-z",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fr5-mx::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fr5-mx-Debug-87b96c30dbcd2e52894f.json",
+					"name" : "fr5-mx",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fr5-mxyz::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fr5-mxyz-Debug-375d9e9df8f61b14286c.json",
+					"name" : "fr5-mxyz",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fr5-my::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fr5-my-Debug-b9b9c1d8a68c2a0862da.json",
+					"name" : "fr5-my",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fr5-mz::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fr5-mz-Debug-bf3a72e2f0711d9a97ef.json",
+					"name" : "fr5-mz",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fr5-servo::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fr5-servo-Debug-40af4fe705a9ed90393c.json",
+					"name" : "fr5-servo",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "get_logger_interface::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-get_logger_interface-Debug-cb1cd70743d48895e730.json",
+					"name" : "get_logger_interface",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "get_robot_version::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-get_robot_version-Debug-c7bb168da3b0951b0a85.json",
+					"name" : "get_robot_version",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gripper::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gripper-Debug-d64f7a4c098b34e3c543.json",
+					"name" : "gripper",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gripper_enable::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gripper_enable-Debug-846dd05973235b13fb1c.json",
+					"name" : "gripper_enable",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gripper_goto::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gripper_goto-Debug-b4e38fc725a13d9ace3f.json",
+					"name" : "gripper_goto",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gripper_pp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gripper_pp-Debug-df6889cc7dceace85560.json",
+					"name" : "gripper_pp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_GetRobotTeachingPoint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_GetRobotTeachingPoint-Debug-91a885b0dcc24d195dec.json",
+					"name" : "robot_GetRobotTeachingPoint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_basic_interface::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_basic_interface-Debug-c789665968b1d25996cc.json",
+					"name" : "robot_basic_interface",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_dhparam::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_dhparam-Debug-fc07d92f28780216cafd.json",
+					"name" : "robot_dhparam",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_force_compliance::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_force_compliance-Debug-37803cdf753fe60cb4a8.json",
+					"name" : "robot_force_compliance",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_force_control::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_force_control-Debug-4aa1472cc7166dd6fa24.json",
+					"name" : "robot_force_control",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_force_find_surface_cal_center::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_force_find_surface_cal_center-Debug-22d9060568d5c811229a.json",
+					"name" : "robot_force_find_surface_cal_center",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_force_guard::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_force_guard-Debug-4ec0f5f442bc7a3fc010.json",
+					"name" : "robot_force_guard",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_force_sensor_set::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_force_sensor_set-Debug-6f2cba1a070ae868411e.json",
+					"name" : "robot_force_sensor_set",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_force_spiral_rot_line_insertion::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_force_spiral_rot_line_insertion-Debug-efcb9c91408b8a99eaad.json",
+					"name" : "robot_force_spiral_rot_line_insertion",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_io_interface::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_io_interface-Debug-d084a4db11198533f316.json",
+					"name" : "robot_io_interface",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_jog::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_jog-Debug-8464029a706e6d58eca0.json",
+					"name" : "robot_jog",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_loadIdentity_test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_loadIdentity_test-Debug-dfa0f2dbf7cc82606376.json",
+					"name" : "robot_loadIdentity_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_motion_interface::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_motion_interface-Debug-e6a18700f91e15462083.json",
+					"name" : "robot_motion_interface",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_movecart::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_movecart-Debug-0d1780aa5601b5fb136a.json",
+					"name" : "robot_movecart",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_new_spline::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_new_spline-Debug-3a40bd27bca49a311ba9.json",
+					"name" : "robot_new_spline",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_otherFunctions_test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_otherFunctions_test-Debug-0c905be689a5ef9e3b68.json",
+					"name" : "robot_otherFunctions_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_points_offset::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_points_offset-Debug-29b20674a81f211ded4e.json",
+					"name" : "robot_points_offset",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_pointtable_download::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_pointtable_download-Debug-3bb8eb64993621f1c84d.json",
+					"name" : "robot_pointtable_download",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_pointtable_switch::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_pointtable_switch-Debug-f6642d2958693de73571.json",
+					"name" : "robot_pointtable_switch",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_pointtable_upload::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_pointtable_upload-Debug-28426c4c2c0a57e197d1.json",
+					"name" : "robot_pointtable_upload",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_segment_weld::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_segment_weld-Debug-37f3dd78bd4683603667.json",
+					"name" : "robot_segment_weld",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_servocart::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_servocart-Debug-bdd5f0f59589595c9822.json",
+					"name" : "robot_servocart",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_setformat_interface::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_setformat_interface-Debug-d534d26bf9d7ad70215e.json",
+					"name" : "robot_setformat_interface",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_spline::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_spline-Debug-3341ed8fcce7fc15e2e9.json",
+					"name" : "robot_spline",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_tpd_record::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_tpd_record-Debug-7f473e4f89e06ce78591.json",
+					"name" : "robot_tpd_record",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_tpd_repetition::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_tpd_repetition-Debug-fe125bd0866e8b0739d3.json",
+					"name" : "robot_tpd_repetition",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_traj_test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_traj_test-Debug-a8cb2889feb7f58620d7.json",
+					"name" : "robot_traj_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_weld::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_weld-Debug-b0049ab38f567964d640.json",
+					"name" : "robot_weld",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_weld_setfeed::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_weld_setfeed-Debug-083f2d15cca50b11df47.json",
+					"name" : "robot_weld_setfeed",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "webapp_program_use::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-webapp_program_use-Debug-8e318f1c6afa6ed8aaf8.json",
+					"name" : "webapp_program_use",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/build",
+		"source" : "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

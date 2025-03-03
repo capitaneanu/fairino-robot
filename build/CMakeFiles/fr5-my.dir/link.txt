@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/fr5-my.dir/src/fr5-my.cpp.o -o bin/fr5-my  -Wl,-rpath,/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/lib /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/lib/libfairino.so 

@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/gripper_enable.dir/src/gripper_enable.cpp.o -o bin/gripper_enable  -Wl,-rpath,/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/lib /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/lib/libfairino.so 

@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/robot_servocart.dir/src/robot_servocart.cpp.o -o bin/robot_servocart  -Wl,-rpath,/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/lib /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/lib/libfairino.so 

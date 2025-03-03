@@ -1,0 +1,267 @@
+[
+{
+  "directory": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/build",
+  "command": "/usr/bin/g++ -DLINUX_OPTION -I/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/include -g -g -O0 -o CMakeFiles/brake_off.dir/src/brake_off.cpp.o -c /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/brake_off.cpp",
+  "file": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/brake_off.cpp"
+},
+{
+  "directory": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/build",
+  "command": "/usr/bin/g++ -DLINUX_OPTION -I/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/include -g -g -O0 -o CMakeFiles/brake_on.dir/src/brake_on.cpp.o -c /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/brake_on.cpp",
+  "file": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/brake_on.cpp"
+},
+{
+  "directory": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/build",
+  "command": "/usr/bin/g++ -DLINUX_OPTION -I/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/include -g -g -O0 -o CMakeFiles/fr5-0.dir/src/fr5-0.cpp.o -c /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/fr5-0.cpp",
+  "file": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/fr5-0.cpp"
+},
+{
+  "directory": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/build",
+  "command": "/usr/bin/g++ -DLINUX_OPTION -I/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/include -g -g -O0 -o CMakeFiles/fr5-1.dir/src/fr5-1.cpp.o -c /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/fr5-1.cpp",
+  "file": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/fr5-1.cpp"
+},
+{
+  "directory": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/build",
+  "command": "/usr/bin/g++ -DLINUX_OPTION -I/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/include -g -g -O0 -o CMakeFiles/fr5-2.dir/src/fr5-2.cpp.o -c /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/fr5-2.cpp",
+  "file": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/fr5-2.cpp"
+},
+{
+  "directory": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/build",
+  "command": "/usr/bin/g++ -DLINUX_OPTION -I/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/include -g -g -O0 -o CMakeFiles/fr5-cart-move.dir/src/fr5-cart-move.cpp.o -c /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/fr5-cart-move.cpp",
+  "file": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/fr5-cart-move.cpp"
+},
+{
+  "directory": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/build",
+  "command": "/usr/bin/g++ -DLINUX_OPTION -I/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/include -g -g -O0 -o CMakeFiles/fr5-demo.dir/src/fr5-demo.cpp.o -c /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/fr5-demo.cpp",
+  "file": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/fr5-demo.cpp"
+},
+{
+  "directory": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/build",
+  "command": "/usr/bin/g++ -DLINUX_OPTION -I/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/include -g -g -O0 -o CMakeFiles/fr5-jog-stop.dir/src/fr5-jog-stop.cpp.o -c /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/fr5-jog-stop.cpp",
+  "file": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/fr5-jog-stop.cpp"
+},
+{
+  "directory": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/build",
+  "command": "/usr/bin/g++ -DLINUX_OPTION -I/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/include -g -g -O0 -o CMakeFiles/fr5-jog-x.dir/src/fr5-jog-x.cpp.o -c /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/fr5-jog-x.cpp",
+  "file": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/fr5-jog-x.cpp"
+},
+{
+  "directory": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/build",
+  "command": "/usr/bin/g++ -DLINUX_OPTION -I/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/include -g -g -O0 -o CMakeFiles/fr5-jog-y.dir/src/fr5-jog-y.cpp.o -c /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/fr5-jog-y.cpp",
+  "file": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/fr5-jog-y.cpp"
+},
+{
+  "directory": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/build",
+  "command": "/usr/bin/g++ -DLINUX_OPTION -I/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/include -g -g -O0 -o CMakeFiles/fr5-jog-z.dir/src/fr5-jog-z.cpp.o -c /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/fr5-jog-z.cpp",
+  "file": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/fr5-jog-z.cpp"
+},
+{
+  "directory": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/build",
+  "command": "/usr/bin/g++ -DLINUX_OPTION -I/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/include -g -g -O0 -o CMakeFiles/fr5-jog.dir/src/fr5-jog.cpp.o -c /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/fr5-jog.cpp",
+  "file": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/fr5-jog.cpp"
+},
+{
+  "directory": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/build",
+  "command": "/usr/bin/g++ -DLINUX_OPTION -I/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/include -g -g -O0 -o CMakeFiles/fr5-mx.dir/src/fr5-mx.cpp.o -c /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/fr5-mx.cpp",
+  "file": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/fr5-mx.cpp"
+},
+{
+  "directory": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/build",
+  "command": "/usr/bin/g++ -DLINUX_OPTION -I/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/include -g -g -O0 -o CMakeFiles/fr5-mxyz.dir/src/fr5-mxyz.cpp.o -c /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/fr5-mxyz.cpp",
+  "file": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/fr5-mxyz.cpp"
+},
+{
+  "directory": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/build",
+  "command": "/usr/bin/g++ -DLINUX_OPTION -I/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/include -g -g -O0 -o CMakeFiles/fr5-my.dir/src/fr5-my.cpp.o -c /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/fr5-my.cpp",
+  "file": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/fr5-my.cpp"
+},
+{
+  "directory": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/build",
+  "command": "/usr/bin/g++ -DLINUX_OPTION -I/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/include -g -g -O0 -o CMakeFiles/fr5-mz.dir/src/fr5-mz.cpp.o -c /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/fr5-mz.cpp",
+  "file": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/fr5-mz.cpp"
+},
+{
+  "directory": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/build",
+  "command": "/usr/bin/g++ -DLINUX_OPTION -I/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/include -g -g -O0 -o CMakeFiles/fr5-servo.dir/src/fr5-servo.cpp.o -c /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/fr5-servo.cpp",
+  "file": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/fr5-servo.cpp"
+},
+{
+  "directory": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/build",
+  "command": "/usr/bin/g++ -DLINUX_OPTION -I/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/include -g -g -O0 -o CMakeFiles/get_logger_interface.dir/src/get_logger_interface.cpp.o -c /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/get_logger_interface.cpp",
+  "file": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/get_logger_interface.cpp"
+},
+{
+  "directory": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/build",
+  "command": "/usr/bin/g++ -DLINUX_OPTION -I/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/include -g -g -O0 -o CMakeFiles/get_robot_version.dir/src/get_robot_version.cpp.o -c /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/get_robot_version.cpp",
+  "file": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/get_robot_version.cpp"
+},
+{
+  "directory": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/build",
+  "command": "/usr/bin/g++ -DLINUX_OPTION -I/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/include -g -g -O0 -o CMakeFiles/gripper.dir/src/gripper.cpp.o -c /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/gripper.cpp",
+  "file": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/gripper.cpp"
+},
+{
+  "directory": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/build",
+  "command": "/usr/bin/g++ -DLINUX_OPTION -I/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/include -g -g -O0 -o CMakeFiles/gripper_enable.dir/src/gripper_enable.cpp.o -c /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/gripper_enable.cpp",
+  "file": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/gripper_enable.cpp"
+},
+{
+  "directory": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/build",
+  "command": "/usr/bin/g++ -DLINUX_OPTION -I/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/include -g -g -O0 -o CMakeFiles/gripper_goto.dir/src/gripper_goto.cpp.o -c /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/gripper_goto.cpp",
+  "file": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/gripper_goto.cpp"
+},
+{
+  "directory": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/build",
+  "command": "/usr/bin/g++ -DLINUX_OPTION -I/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/include -g -g -O0 -o CMakeFiles/gripper_pp.dir/src/gripper_pp.cpp.o -c /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/gripper_pp.cpp",
+  "file": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/gripper_pp.cpp"
+},
+{
+  "directory": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/build",
+  "command": "/usr/bin/g++ -DLINUX_OPTION -I/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/include -g -g -O0 -o CMakeFiles/robot_GetRobotTeachingPoint.dir/src/robot_GetRobotTeachingPoint.cpp.o -c /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_GetRobotTeachingPoint.cpp",
+  "file": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_GetRobotTeachingPoint.cpp"
+},
+{
+  "directory": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/build",
+  "command": "/usr/bin/g++ -DLINUX_OPTION -I/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/include -g -g -O0 -o CMakeFiles/robot_basic_interface.dir/src/robot_basic_interface.cpp.o -c /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_basic_interface.cpp",
+  "file": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_basic_interface.cpp"
+},
+{
+  "directory": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/build",
+  "command": "/usr/bin/g++ -DLINUX_OPTION -I/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/include -g -g -O0 -o CMakeFiles/robot_dhparam.dir/src/robot_dhparam.cpp.o -c /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_dhparam.cpp",
+  "file": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_dhparam.cpp"
+},
+{
+  "directory": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/build",
+  "command": "/usr/bin/g++ -DLINUX_OPTION -I/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/include -g -g -O0 -o CMakeFiles/robot_force_compliance.dir/src/robot_force_compliance.cpp.o -c /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_force_compliance.cpp",
+  "file": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_force_compliance.cpp"
+},
+{
+  "directory": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/build",
+  "command": "/usr/bin/g++ -DLINUX_OPTION -I/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/include -g -g -O0 -o CMakeFiles/robot_force_control.dir/src/robot_force_control.cpp.o -c /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_force_control.cpp",
+  "file": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_force_control.cpp"
+},
+{
+  "directory": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/build",
+  "command": "/usr/bin/g++ -DLINUX_OPTION -I/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/include -g -g -O0 -o CMakeFiles/robot_force_find_surface_cal_center.dir/src/robot_force_find_surface_cal_center.cpp.o -c /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_force_find_surface_cal_center.cpp",
+  "file": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_force_find_surface_cal_center.cpp"
+},
+{
+  "directory": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/build",
+  "command": "/usr/bin/g++ -DLINUX_OPTION -I/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/include -g -g -O0 -o CMakeFiles/robot_force_guard.dir/src/robot_force_guard.cpp.o -c /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_force_guard.cpp",
+  "file": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_force_guard.cpp"
+},
+{
+  "directory": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/build",
+  "command": "/usr/bin/g++ -DLINUX_OPTION -I/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/include -g -g -O0 -o CMakeFiles/robot_force_sensor_set.dir/src/robot_force_sensor_set.cpp.o -c /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_force_sensor_set.cpp",
+  "file": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_force_sensor_set.cpp"
+},
+{
+  "directory": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/build",
+  "command": "/usr/bin/g++ -DLINUX_OPTION -I/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/include -g -g -O0 -o CMakeFiles/robot_force_spiral_rot_line_insertion.dir/src/robot_force_spiral_rot_line_insertion.cpp.o -c /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_force_spiral_rot_line_insertion.cpp",
+  "file": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_force_spiral_rot_line_insertion.cpp"
+},
+{
+  "directory": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/build",
+  "command": "/usr/bin/g++ -DLINUX_OPTION -I/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/include -g -g -O0 -o CMakeFiles/robot_io_interface.dir/src/robot_io_interface.cpp.o -c /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_io_interface.cpp",
+  "file": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_io_interface.cpp"
+},
+{
+  "directory": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/build",
+  "command": "/usr/bin/g++ -DLINUX_OPTION -I/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/include -g -g -O0 -o CMakeFiles/robot_jog.dir/src/robot_jog.cpp.o -c /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_jog.cpp",
+  "file": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_jog.cpp"
+},
+{
+  "directory": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/build",
+  "command": "/usr/bin/g++ -DLINUX_OPTION -I/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/include -g -g -O0 -o CMakeFiles/robot_loadIdentity_test.dir/src/robot_loadIdentity_test.cpp.o -c /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_loadIdentity_test.cpp",
+  "file": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_loadIdentity_test.cpp"
+},
+{
+  "directory": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/build",
+  "command": "/usr/bin/g++ -DLINUX_OPTION -I/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/include -g -g -O0 -o CMakeFiles/robot_motion_interface.dir/src/robot_motion_interface.cpp.o -c /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_motion_interface.cpp",
+  "file": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_motion_interface.cpp"
+},
+{
+  "directory": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/build",
+  "command": "/usr/bin/g++ -DLINUX_OPTION -I/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/include -g -g -O0 -o CMakeFiles/robot_movecart.dir/src/robot_movecart.cpp.o -c /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_movecart.cpp",
+  "file": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_movecart.cpp"
+},
+{
+  "directory": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/build",
+  "command": "/usr/bin/g++ -DLINUX_OPTION -I/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/include -g -g -O0 -o CMakeFiles/robot_new_spline.dir/src/robot_new_spline.cpp.o -c /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_new_spline.cpp",
+  "file": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_new_spline.cpp"
+},
+{
+  "directory": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/build",
+  "command": "/usr/bin/g++ -DLINUX_OPTION -I/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/include -g -g -O0 -o CMakeFiles/robot_otherFunctions_test.dir/src/robot_otherFunctions_test.cpp.o -c /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_otherFunctions_test.cpp",
+  "file": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_otherFunctions_test.cpp"
+},
+{
+  "directory": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/build",
+  "command": "/usr/bin/g++ -DLINUX_OPTION -I/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/include -g -g -O0 -o CMakeFiles/robot_points_offset.dir/src/robot_points_offset.cpp.o -c /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_points_offset.cpp",
+  "file": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_points_offset.cpp"
+},
+{
+  "directory": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/build",
+  "command": "/usr/bin/g++ -DLINUX_OPTION -I/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/include -g -g -O0 -o CMakeFiles/robot_pointtable_download.dir/src/robot_pointtable_download.cpp.o -c /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_pointtable_download.cpp",
+  "file": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_pointtable_download.cpp"
+},
+{
+  "directory": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/build",
+  "command": "/usr/bin/g++ -DLINUX_OPTION -I/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/include -g -g -O0 -o CMakeFiles/robot_pointtable_switch.dir/src/robot_pointtable_switch.cpp.o -c /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_pointtable_switch.cpp",
+  "file": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_pointtable_switch.cpp"
+},
+{
+  "directory": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/build",
+  "command": "/usr/bin/g++ -DLINUX_OPTION -I/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/include -g -g -O0 -o CMakeFiles/robot_pointtable_upload.dir/src/robot_pointtable_upload.cpp.o -c /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_pointtable_upload.cpp",
+  "file": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_pointtable_upload.cpp"
+},
+{
+  "directory": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/build",
+  "command": "/usr/bin/g++ -DLINUX_OPTION -I/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/include -g -g -O0 -o CMakeFiles/robot_segment_weld.dir/src/robot_segment_weld.cpp.o -c /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_segment_weld.cpp",
+  "file": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_segment_weld.cpp"
+},
+{
+  "directory": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/build",
+  "command": "/usr/bin/g++ -DLINUX_OPTION -I/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/include -g -g -O0 -o CMakeFiles/robot_servocart.dir/src/robot_servocart.cpp.o -c /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_servocart.cpp",
+  "file": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_servocart.cpp"
+},
+{
+  "directory": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/build",
+  "command": "/usr/bin/g++ -DLINUX_OPTION -I/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/include -g -g -O0 -o CMakeFiles/robot_setformat_interface.dir/src/robot_setformat_interface.cpp.o -c /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_setformat_interface.cpp",
+  "file": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_setformat_interface.cpp"
+},
+{
+  "directory": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/build",
+  "command": "/usr/bin/g++ -DLINUX_OPTION -I/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/include -g -g -O0 -o CMakeFiles/robot_spline.dir/src/robot_spline.cpp.o -c /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_spline.cpp",
+  "file": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_spline.cpp"
+},
+{
+  "directory": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/build",
+  "command": "/usr/bin/g++ -DLINUX_OPTION -I/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/include -g -g -O0 -o CMakeFiles/robot_tpd_record.dir/src/robot_tpd_record.cpp.o -c /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_tpd_record.cpp",
+  "file": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_tpd_record.cpp"
+},
+{
+  "directory": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/build",
+  "command": "/usr/bin/g++ -DLINUX_OPTION -I/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/include -g -g -O0 -o CMakeFiles/robot_tpd_repetition.dir/src/robot_tpd_repetition.cpp.o -c /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_tpd_repetition.cpp",
+  "file": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_tpd_repetition.cpp"
+},
+{
+  "directory": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/build",
+  "command": "/usr/bin/g++ -DLINUX_OPTION -I/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/include -g -g -O0 -o CMakeFiles/robot_traj_test.dir/src/robot_traj_test.cpp.o -c /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_traj_test.cpp",
+  "file": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_traj_test.cpp"
+},
+{
+  "directory": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/build",
+  "command": "/usr/bin/g++ -DLINUX_OPTION -I/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/include -g -g -O0 -o CMakeFiles/robot_weld.dir/src/robot_weld.cpp.o -c /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_weld.cpp",
+  "file": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_weld.cpp"
+},
+{
+  "directory": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/build",
+  "command": "/usr/bin/g++ -DLINUX_OPTION -I/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/include -g -g -O0 -o CMakeFiles/robot_weld_setfeed.dir/src/robot_weld_setfeed.cpp.o -c /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_weld_setfeed.cpp",
+  "file": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/robot_weld_setfeed.cpp"
+},
+{
+  "directory": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/build",
+  "command": "/usr/bin/g++ -DLINUX_OPTION -I/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/include -g -g -O0 -o CMakeFiles/webapp_program_use.dir/src/webapp_program_use.cpp.o -c /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/webapp_program_use.cpp",
+  "file": "/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/src/webapp_program_use.cpp"
+}
+]

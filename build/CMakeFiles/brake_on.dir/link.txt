@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/brake_on.dir/src/brake_on.cpp.o -o bin/brake_on  -Wl,-rpath,/home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/lib /home/dann/ws/fairino-cpp-sdk-2.1.8-robot3.7.8/linux/example/lib/libfairino.so 
