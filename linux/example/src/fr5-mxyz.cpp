@@ -68,6 +68,7 @@ int main(int argc, char **argv)
 
     robot.GetActualTCPPose(flag, &tcp);
     // robot.GetActualToolFlangePose(flag, &tcp);
+    printf("GetActualTCPPose after:\t\t%f,%f,%f,%f,%f,%f\n", tcp.tran.x, tcp.tran.y, tcp.tran.z, tcp.rpy.rx, tcp.rpy.ry, tcp.rpy.rz);
 
     desc_pos.tran.x = tcp.tran.x + xpos;
     desc_pos.tran.y = tcp.tran.y + ypos;
@@ -78,8 +79,8 @@ int main(int argc, char **argv)
     robot.MoveCart(&desc_pos, tool, user, vel, acc, ovl, blendT, config);
     robot.WaitMs(100);
 
-    // robot.GetActualTCPPose(flag, &tcp);
-    // printf("GetActualTCPPose after:\t\t%f,%f,%f,%f,%f,%f\n", tcp.tran.x, tcp.tran.y, tcp.tran.z, tcp.rpy.rx, tcp.rpy.ry, tcp.rpy.rz);
+    robot.GetActualTCPPose(flag, &tcp);
+    printf("GetActualTCPPose after:\t\t%f,%f,%f,%f,%f,%f\n", tcp.tran.x, tcp.tran.y, tcp.tran.z, tcp.rpy.rx, tcp.rpy.ry, tcp.rpy.rz);
     // robot.GetActualToolFlangePose(flag, &flange);
     // printf("GetActualToolFlangePose after:\t%f,%f,%f,%f,%f,%f\n\n", flange.tran.x, flange.tran.y, flange.tran.z, flange.rpy.rx, flange.rpy.ry, flange.rpy.rz);
 
