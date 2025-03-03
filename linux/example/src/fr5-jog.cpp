@@ -56,8 +56,8 @@ int main(int argc, char **argv)
 
     robot.GetActualTCPPose(flag, &tcp);
     printf("GetActualTCPPose after:\t\t%f,%f,%f,%f,%f,%f\n", tcp.tran.x, tcp.tran.y, tcp.tran.z, tcp.rpy.rx, tcp.rpy.ry, tcp.rpy.rz);
-    // robot.GetActualToolFlangePose(flag, &flange);
-    // printf("GetActualToolFlangePose after:\t%f,%f,%f,%f,%f,%f\n\n", flange.tran.x, flange.tran.y, flange.tran.z, flange.rpy.rx, flange.rpy.ry, flange.rpy.rz);
+    robot.GetActualToolFlangePose(flag, &flange);
+    printf("GetActualToolFlangePose after:\t%f,%f,%f,%f,%f,%f\n\n", flange.tran.x, flange.tran.y, flange.tran.z, flange.rpy.rx, flange.rpy.ry, flange.rpy.rz);
 
     int xp = xpos;
     robot.StartJOG(4, 1, xpos >= 0 ? 1 : 0, 50.0, 50.0, xpos >= 0 ? xp : -xp);
