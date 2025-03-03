@@ -1,2 +1,0 @@
-# Empty dependencies file for robot_setformat_interface.
-# This may be replaced when dependencies are built.
