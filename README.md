@@ -1,4 +1,4 @@
-# Fairino Robot
+# Fairino Robot v3.7.8
 
 ## commands
 * gripper enable
