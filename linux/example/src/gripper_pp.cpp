@@ -91,7 +91,7 @@ int main(void)
     uint8_t flag = 2;
     uint8_t search = 0;
 
-    robot.SetSpeed(80);
+    robot.SetSpeed(50);
     printf("\n");
 
     int ret = 0;
