@@ -35,8 +35,8 @@ int main(int argc, char **argv)
     int tool = 0; // default = 0
     int user = 0;
     float vel = 100.0;
-    float acc = 80.0;
-    float ovl = 80.0;
+    float acc = 50.0;
+    float ovl = 50.0;
     float blendT = 0.0;
     float blendR = 0.0;
     uint8_t flag = 0;
