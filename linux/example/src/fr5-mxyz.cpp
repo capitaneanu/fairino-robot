@@ -99,7 +99,7 @@ int main(int argc, char **argv) {
   //   robot.GetActualTCPPose(flag, &tcp);
   //   printf("GetActualTCPPose after:\t\t%f,%f,%f,%f,%f,%f\n", tcp.tran.x,
   //          tcp.tran.y, tcp.tran.z, tcp.rpy.rx, tcp.rpy.ry, tcp.rpy.rz);
-  
+
   //   robot.GetActualToolFlangePose(flag, &flange);
   //   printf("GetActualToolFlangePose after:\t%f,%f,%f,%f,%f,%f\n\n",
   //   flange.tran.x,
