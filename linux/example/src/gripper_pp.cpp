@@ -85,6 +85,8 @@ int main(void) {
   j1.jPos[4] = 65.601;
   j1.jPos[5] = 21.277;
 
+  int ret = 0;
+  int err0 = 0;
   int tool = 0;
   int user = 0;
   float vel = 100.0;
@@ -98,18 +100,13 @@ int main(void) {
   robot.SetSpeed(40);
   printf("\n");
 
-  int ret = 0;
-
   // The forward kinematic interface can be used to solve Cartesian space
   // coordinates with only joint positions
   ret = robot.GetForwardKin(&pj1, &desc_pos1);
   ret = robot.GetForwardKin(&pj2, &desc_pos2);
   ret = robot.GetForwardKin(&pj3, &desc_pos3);
   ret = robot.GetForwardKin(&pj4, &desc_pos4);
-
   std::this_thread::sleep_for(std::chrono::milliseconds(500));
-
-  int err0 = 0;
 
   err0 = robot.MoveJ(&pj1, &desc_pos1, tool, user, vel, acc, ovl, &epos, blendT,
                      flag, &offset_pos);
@@ -156,7 +153,6 @@ int main(void) {
   err0 = robot.MoveJ(&pj1, &desc_pos1, tool, user, vel, acc, ovl, &epos, blendT,
                      flag, &offset_pos);
   robot.MoveGripper(index, 100, 60, 40, max_time, block, 0, 0, 0, 0);
-
   printf("\n");
 
   return 0;
