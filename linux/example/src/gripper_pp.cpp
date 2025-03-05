@@ -117,14 +117,17 @@ int main(void) {
     err0 = robot.MoveJ(&pj2, &desc_pos2, tool, user, vel, acc, ovl, &epos,
                        blendT, flag, &offset_pos);
     robot.MoveGripper(index, 60, 60, 40, max_time, block, 0, 0, 0, 0);
+
     err0 = robot.MoveJ(&pj1, &desc_pos1, tool, user, vel, acc, ovl, &epos,
                        blendT, flag, &offset_pos);
     err0 = robot.MoveJ(&pj3, &desc_pos3, tool, user, vel, acc, ovl, &epos,
                        blendT, flag, &offset_pos);
     err0 = robot.MoveJ(&pj4, &desc_pos4, tool, user, vel, acc, ovl, &epos,
                        blendT, flag, &offset_pos);
+
     robot.MoveGripper(index, 0, 60, 40, max_time, block, 0, 0, 0, 0);
     robot.MoveGripper(index, 60, 60, 40, max_time, block, 0, 0, 0, 0);
+
     err0 = robot.MoveJ(&pj3, &desc_pos3, tool, user, vel, acc, ovl, &epos,
                        blendT, flag, &offset_pos);
     err0 = robot.MoveJ(&pj1, &desc_pos1, tool, user, vel, acc, ovl, &epos,
