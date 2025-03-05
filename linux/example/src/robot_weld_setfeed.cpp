@@ -3,11 +3,12 @@
 #include <string.h>
 #include <windows.h>
 #elif LINUX_OPTION
-#include <cstdlib>
-#include <iostream>
 #include <stdio.h>
-#include <cstring>
 #include <unistd.h>
+
+#include <cstdlib>
+#include <cstring>
+#include <iostream>
 #endif
 
 #include <chrono>
@@ -15,37 +16,36 @@
 
 using namespace std;
 
-int main(void)
-{
-	printf("start to debug\n");
-	FRRobot robot;                 
-	robot.RPC("192.168.58.2");     
+int main(void) {
+  printf("start to debug\n");
+  FRRobot robot;
+  robot.RPC("192.168.58.2");
 
-	this_thread::sleep_for(chrono::seconds(3));
+  this_thread::sleep_for(chrono::seconds(3));
 
-    int retval = robot.SetForwardWireFeed(1, 1);
-    cout << "SetForwardWireFeed retval is: " << retval << endl;
+  int retval = robot.SetForwardWireFeed(1, 1);
+  cout << "SetForwardWireFeed retval is: " << retval << endl;
 
-    this_thread::sleep_for(chrono::seconds(3));
+  this_thread::sleep_for(chrono::seconds(3));
 
-    retval = robot.SetForwardWireFeed(1, 0);
-    cout << "SetForwardWireFeed retval is: " << retval << endl;
+  retval = robot.SetForwardWireFeed(1, 0);
+  cout << "SetForwardWireFeed retval is: " << retval << endl;
 
-    retval = robot.SetReverseWireFeed(1, 1);
-    cout << "SetReverseWireFeed retval is: " << retval << endl;
+  retval = robot.SetReverseWireFeed(1, 1);
+  cout << "SetReverseWireFeed retval is: " << retval << endl;
 
-    this_thread::sleep_for(chrono::seconds(3));
+  this_thread::sleep_for(chrono::seconds(3));
 
-    retval = robot.SetReverseWireFeed(1, 0);
-    cout << "SetReverseWireFeed retval is: " << retval << endl;
+  retval = robot.SetReverseWireFeed(1, 0);
+  cout << "SetReverseWireFeed retval is: " << retval << endl;
 
-    retval = robot.SetAspirated(1, 1);
-    cout << "SetAspirated retval " << retval << endl;
+  retval = robot.SetAspirated(1, 1);
+  cout << "SetAspirated retval " << retval << endl;
 
-	this_thread::sleep_for(chrono::seconds(2));
+  this_thread::sleep_for(chrono::seconds(2));
 
-    retval = robot.SetAspirated(1, 0);
-    cout << "SetAspirated retval " << retval << endl;
-    
-    return 0;
+  retval = robot.SetAspirated(1, 0);
+  cout << "SetAspirated retval " << retval << endl;
+
+  return 0;
 }

@@ -3,11 +3,12 @@
 #include <string.h>
 #include <windows.h>
 #elif LINUX_OPTION
-#include <cstdlib>
-#include <iostream>
 #include <stdio.h>
-#include <cstring>
 #include <unistd.h>
+
+#include <cstdlib>
+#include <cstring>
+#include <iostream>
 #endif
 
 #include <chrono>
@@ -15,16 +16,14 @@
 
 using namespace std;
 
-int main(void)
-{
-	FRRobot robot;                
-	robot.RPC("192.168.58.2");     
+int main(void) {
+  FRRobot robot;
+  robot.RPC("192.168.58.2");
 
-	string point_tablename = "point_table_test.db";
-	// string point_tablename = "point_table_a.db";
-	string lua_name = "testPoint.lua";
+  string point_tablename = "point_table_test.db";
+  // string point_tablename = "point_table_a.db";
+  string lua_name = "testPoint.lua";
 
-    int retval = robot.PointTableUpdateLua(point_tablename, lua_name);
-	cout << "retval is: " << retval << endl;
-
+  int retval = robot.PointTableUpdateLua(point_tablename, lua_name);
+  cout << "retval is: " << retval << endl;
 }

@@ -1,14 +1,16 @@
 #include "libfairino/robot.h"
 #ifdef WINDOWS_OPTION
 #include <string.h>
-#include <string>
 #include <windows.h>
+
+#include <string>
 #elif LINUX_OPTION
-#include <cstdlib>
-#include <iostream>
 #include <stdio.h>
-#include <cstring>
 #include <unistd.h>
+
+#include <cstdlib>
+#include <cstring>
+#include <iostream>
 #endif
 
 #include <chrono>
@@ -16,14 +18,12 @@
 
 using namespace std;
 
-int main(void)
-{
-	FRRobot robot;                
-	robot.RPC("192.168.58.2");     
+int main(void) {
+  FRRobot robot;
+  robot.RPC("192.168.58.2");
 
-	string save_path = "D://sharkLog/0.db";
+  string save_path = "D://sharkLog/0.db";
 
-	int retval = robot.PointTableUpLoad(save_path);
-	cout << "retval is: "<<retval<<endl;
-
+  int retval = robot.PointTableUpLoad(save_path);
+  cout << "retval is: " << retval << endl;
 }
