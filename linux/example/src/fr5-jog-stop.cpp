@@ -14,9 +14,9 @@
 using namespace std;
 
 int main(int argc, char **argv) {
-  FRRobot robot;              // Instantiate the robot object
-  robot.RPC("192.168.58.2");  // Establish a communication connection with the
-                              // robot controller
+  FRRobot robot;             // Instantiate the robot object
+  robot.RPC("192.168.58.2"); // Establish a communication connection with the
+                             // robot controller
 
   uint8_t flag = 0;
   DescPose tcp;

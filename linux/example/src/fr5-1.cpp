@@ -14,9 +14,9 @@
 using namespace std;
 
 int main(void) {
-  FRRobot robot;              // Instantiate the robot object
-  robot.RPC("192.168.58.2");  // Establish a communication connection with the
-                              // robot controller
+  FRRobot robot;             // Instantiate the robot object
+  robot.RPC("192.168.58.2"); // Establish a communication connection with the
+                             // robot controller
 
   JointPos j, j1, j2, j3, j4;
   DescPose desc_pos, desc_pos1, desc_pos2, desc_pos3, desc_pos4, offset_pos,

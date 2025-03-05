@@ -14,9 +14,9 @@
 using namespace std;
 
 int main(void) {
-  FRRobot robot;              // Instantiate the robot object
-  robot.RPC("192.168.58.2");  // Establish a communication connection with the
-                              // robot controller
+  FRRobot robot;             // Instantiate the robot object
+  robot.RPC("192.168.58.2"); // Establish a communication connection with the
+                             // robot controller
 
   JointPos j, j1, j2, j3, j4, start_joint_pose;
   DescPose desc_pos, desc_pos1, desc_pos2, desc_pos3, desc_pos4, offset_pos,
@@ -91,8 +91,8 @@ int main(void) {
   // start_joint_pose.jPos[5]);
 
   int ret0 = robot.GetForwardKin(
-      &j1, &desc_pos);  // The forward kinematic interface can be used to solve
-                        // Cartesian space coordinates with only joint positions
+      &j1, &desc_pos); // The forward kinematic interface can be used to solve
+                       // Cartesian space coordinates with only joint positions
   printf(
       "ForwardKinematics is:  x %f\t  y %f\t  z %f\t rx %f\t ry %f\t rz %f \n",
       desc_pos.tran.x, desc_pos.tran.y, desc_pos.tran.z, desc_pos.rpy.rx,

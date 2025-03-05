@@ -21,9 +21,9 @@ int main(int argc, char **argv) {
 
   int ypos = atoi(argv[1]);
 
-  FRRobot robot;              // Instantiate the robot object
-  robot.RPC("192.168.58.2");  // Establish a communication connection with the
-                              // robot controller
+  FRRobot robot;             // Instantiate the robot object
+  robot.RPC("192.168.58.2"); // Establish a communication connection with the
+                             // robot controller
 
   robot.SetSpeed(40);
   printf("\n");

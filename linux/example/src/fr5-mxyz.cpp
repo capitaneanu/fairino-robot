@@ -23,15 +23,15 @@ int main(int argc, char **argv) {
   int ypos = atoi(argv[2]);
   int zpos = atoi(argv[3]);
 
-  FRRobot robot;              // Instantiate the robot object
-  robot.RPC("192.168.58.2");  // Establish a communication connection with the
-                              // robot controller
+  FRRobot robot;             // Instantiate the robot object
+  robot.RPC("192.168.58.2"); // Establish a communication connection with the
+                             // robot controller
 
-  ROBOT_STATE_PKG rt_coord = {};
+  ROBOT_STATE_PKG rt_data = {};
   DescPose desc_pos, desc_rt, tcp, flange, etool, t_coord;
   DescTran coord;
 
-  int tool = 0;  // default = 0
+  int tool = 0; // default = 0
   int user = 0;
   float vel = 100.0;
   float acc = 50.0;
@@ -40,7 +40,7 @@ int main(int argc, char **argv) {
   float blendR = 0.0;
   uint8_t flag = 0;
   uint8_t search = 0;
-  int config = -1;  // default = -1
+  int config = -1; // default = -1
 
   //   robot.SetLoadWeight(0.5);
   //   coord.x = 0.0;
@@ -65,18 +65,17 @@ int main(int argc, char **argv) {
   robot.SetSpeed(50);
   printf("\n");
 
-  robot.GetRobotRealTimeState(&rt_coord);
+  robot.GetRobotRealTimeState(&rt_data);
   printf("GetRobotRealTimeState :\t\t%f,%f,%f,%f,%f,%f\n",
-         rt_coord.tl_cur_pos[0], rt_coord.tl_cur_pos[1], rt_coord.tl_cur_pos[2],
-         rt_coord.tl_cur_pos[3], rt_coord.tl_cur_pos[4],
-         rt_coord.tl_cur_pos[5]);
+         rt_data.tl_cur_pos[0], rt_data.tl_cur_pos[1], rt_data.tl_cur_pos[2],
+         rt_data.tl_cur_pos[3], rt_data.tl_cur_pos[4], rt_data.tl_cur_pos[5]);
 
-  desc_rt.tran.x = rt_coord.tl_cur_pos[0] + xpos;
-  desc_rt.tran.y = rt_coord.tl_cur_pos[1] + ypos;
-  desc_rt.tran.z = rt_coord.tl_cur_pos[2] + zpos;
-  desc_rt.rpy.rx = rt_coord.tl_cur_pos[3];
-  desc_rt.rpy.ry = rt_coord.tl_cur_pos[4];
-  desc_rt.rpy.rz = rt_coord.tl_cur_pos[5];
+  desc_rt.tran.x = rt_data.tl_cur_pos[0] + xpos;
+  desc_rt.tran.y = rt_data.tl_cur_pos[1] + ypos;
+  desc_rt.tran.z = rt_data.tl_cur_pos[2] + zpos;
+  desc_rt.rpy.rx = rt_data.tl_cur_pos[3];
+  desc_rt.rpy.ry = rt_data.tl_cur_pos[4];
+  desc_rt.rpy.rz = rt_data.tl_cur_pos[5];
 
   robot.MoveCart(&desc_rt, tool, user, vel, acc, ovl, blendT, config);
   robot.WaitMs(100);

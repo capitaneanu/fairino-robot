@@ -21,9 +21,9 @@ int main(int argc, char **argv) {
 
   int cpos = atoi(argv[1]);
 
-  FRRobot robot;              // Instantiate the robot object
-  robot.RPC("192.168.58.2");  // Establish a communication connection with the
-                              // robot controller
+  FRRobot robot;             // Instantiate the robot object
+  robot.RPC("192.168.58.2"); // Establish a communication connection with the
+                             // robot controller
 
   JointPos j, j1, j2, j3, j4;
   DescPose desc_pos, desc_pos1, desc_pos2, desc_pos3, desc_pos4, offset_pos,
@@ -157,7 +157,7 @@ int main(int argc, char **argv) {
     printf("tcp pose:%f,%f,%f,%f,%f,%f\n", tcp.tran.x, tcp.tran.y, tcp.tran.z,
            tcp.rpy.rx, tcp.rpy.ry, tcp.rpy.rz);
 
-    desc_pos1.tran.x = tcp.tran.x + cpos;  // + 10
+    desc_pos1.tran.x = tcp.tran.x + cpos; // + 10
     desc_pos1.tran.y = tcp.tran.y;
     desc_pos1.tran.z = tcp.tran.z;
     desc_pos1.rpy.rx = tcp.rpy.rx;

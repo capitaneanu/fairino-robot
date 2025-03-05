@@ -17,8 +17,8 @@
 using namespace std;
 
 int main(void) {
-  FRRobot robot;              //实例化机器人对象
-  robot.RPC("192.168.58.2");  //与机器人控制器建立通信连接
+  FRRobot robot;             //实例化机器人对象
+  robot.RPC("192.168.58.2"); //与机器人控制器建立通信连接
 
   JointPos j1, j2;
   DescPose desc_pos1, desc_pos2, offset_pos, offset_pos1;
@@ -85,7 +85,7 @@ int main(void) {
                     flag, &offset_pos);
   printf("MoveJ ret = %d\n", ret);
 
-  std::this_thread::sleep_for(std::chrono::milliseconds(2000));  //单位ms
+  std::this_thread::sleep_for(std::chrono::milliseconds(2000)); //单位ms
   ret = robot.PointsOffsetEnable(type, &offset_pos1);
   printf("PointsOffsetEnable ret is:%d\n", ret);
 

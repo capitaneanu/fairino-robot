@@ -21,16 +21,16 @@ int main(int argc, char **argv) {
 
   int cpos = atoi(argv[1]);
 
-  FRRobot robot;              // Instantiate the robot object
-  robot.RPC("192.168.58.2");  // Establish a communication connection with the
-                              // robot controller
+  FRRobot robot;             // Instantiate the robot object
+  robot.RPC("192.168.58.2"); // Establish a communication connection with the
+                             // robot controller
 
   DescPose desc_pos, tcp, flange;
 
   memset(&desc_pos, 0, sizeof(DescPose));
   memset(&tcp, 0, sizeof(DescPose));
 
-  int tool = 0;  // default = 0 and actual = 3
+  int tool = 0; // default = 0 and actual = 3
   int user = 0;
   float vel = 100.0;
   float acc = 50.0;
@@ -39,7 +39,7 @@ int main(int argc, char **argv) {
   float blendR = 0.0;
   uint8_t flag = 0;
   uint8_t search = 0;
-  int config = -1;  // default = -1 and actual config = 5
+  int config = -1; // default = -1 and actual config = 5
 
   robot.GetActualTCPNum(flag, &tool);
   robot.GetRobotCurJointsConfig(&config);
@@ -51,7 +51,7 @@ int main(int argc, char **argv) {
     // printf("GetActualTCPPose:\t\t%f,%f,%f,%f,%f,%f\n\n", tcp.tran.x,
     // tcp.tran.y, tcp.tran.z, tcp.rpy.rx, tcp.rpy.ry, tcp.rpy.rz);
 
-    desc_pos.tran.x = tcp.tran.x + cpos;  // + 10mm
+    desc_pos.tran.x = tcp.tran.x + cpos; // + 10mm
     desc_pos.tran.y = tcp.tran.y;
     desc_pos.tran.z = tcp.tran.z;
     desc_pos.rpy.rx = tcp.rpy.rx;

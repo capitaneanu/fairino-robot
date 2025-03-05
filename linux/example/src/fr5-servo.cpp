@@ -14,10 +14,10 @@ using namespace std;
 int main(void)
 
 {
-  FRRobot robot;  // Instantiate the robot object
+  FRRobot robot; // Instantiate the robot object
 
-  robot.RPC("192.168.58.2");  // Establish a communication connection with the
-                              // robot controller
+  robot.RPC("192.168.58.2"); // Establish a communication connection with the
+                             // robot controller
 
   DescPose desc_pos_dt;
 

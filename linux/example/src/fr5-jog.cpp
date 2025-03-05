@@ -23,9 +23,9 @@ int main(int argc, char **argv) {
   int ypos = atoi(argv[2]);
   int zpos = atoi(argv[3]);
 
-  FRRobot robot;              // Instantiate the robot object
-  robot.RPC("192.168.58.2");  // Establish a communication connection with the
-                              // robot controller
+  FRRobot robot;             // Instantiate the robot object
+  robot.RPC("192.168.58.2"); // Establish a communication connection with the
+                             // robot controller
 
   DescPose desc_pos, tcp, flange, etool, t_coord;
   DescTran coord;
@@ -35,7 +35,7 @@ int main(int argc, char **argv) {
   memset(&etool, 0, sizeof(DescPose));
   memset(&t_coord, 0, sizeof(DescPose));
 
-  int tool = 0;  // default = 0
+  int tool = 0; // default = 0
   int user = 0;
   float vel = 100.0;
   float acc = 50.0;
@@ -44,7 +44,7 @@ int main(int argc, char **argv) {
   float blendR = 0.0;
   uint8_t flag = 0;
   uint8_t search = 0;
-  int config = -1;  // default = -1
+  int config = -1; // default = -1
 
   robot.GetActualTCPNum(flag, &tool);
   robot.GetRobotCurJointsConfig(&config);
