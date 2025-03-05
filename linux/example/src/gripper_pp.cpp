@@ -113,10 +113,6 @@ int main(void) {
   robot.MoveGripper(index, 0, 60, 40, max_time, block, 0, 0, 0, 0);
 
   for (int i = 0; i < 4; i++) {
-    // err0 = robot.MoveJ(&pj1, &desc_pos1, tool, user, vel, acc, ovl, &epos,
-    // blendT, flag, &offset_pos); robot.MoveGripper(index, 0, 60, 40, max_time,
-    // block, 0, 0, 0, 0);
-    // std::this_thread::sleep_for(std::chrono::milliseconds(500));
 
     err0 = robot.MoveJ(&pj2, &desc_pos2, tool, user, vel, acc, ovl, &epos,
                        blendT, flag, &offset_pos);
@@ -129,12 +125,20 @@ int main(void) {
                        blendT, flag, &offset_pos);
     robot.MoveGripper(index, 0, 60, 40, max_time, block, 0, 0, 0, 0);
 
+    // err0 = robot.MoveJ(&pj1, &desc_pos1, tool, user, vel, acc, ovl, &epos,
+    // blendT, flag, &offset_pos); robot.MoveGripper(index, 0, 60, 40, max_time,
+    // block, 0, 0, 0, 0);
+    // std::this_thread::sleep_for(std::chrono::milliseconds(500));
     // err0 = robot.MoveJ(&pj3, &desc_pos3, tool, user, vel, acc, ovl, &epos,
     // blendT, flag, &offset_pos);
     // std::this_thread::sleep_for(std::chrono::milliseconds(1000));
-
     // err0 = robot.MoveJ(&pj4, &desc_pos4, tool, user, vel, acc, ovl, &epos,
     // blendT, flag, &offset_pos);
+    // err0 = robot.MoveJ(&pj1, &desc_pos1, tool, user, vel, acc, ovl, &epos,
+    // blendT, flag, &offset_pos); robot.MoveGripper(index, 100, 60, 40,
+    // max_time, block, 0, 0, 0, 0);
+    // std::this_thread::sleep_for(std::chrono::milliseconds(500));
+
     robot.MoveGripper(index, 60, 60, 40, max_time, block, 0, 0, 0, 0);
     err0 = robot.MoveJ(&pj3, &desc_pos3, tool, user, vel, acc, ovl, &epos,
                        blendT, flag, &offset_pos);
@@ -143,11 +147,6 @@ int main(void) {
     err0 = robot.MoveJ(&pj2, &desc_pos2, tool, user, vel, acc, ovl, &epos,
                        blendT, flag, &offset_pos);
     robot.MoveGripper(index, 0, 60, 40, max_time, block, 0, 0, 0, 0);
-
-    // err0 = robot.MoveJ(&pj1, &desc_pos1, tool, user, vel, acc, ovl, &epos,
-    // blendT, flag, &offset_pos); robot.MoveGripper(index, 100, 60, 40,
-    // max_time, block, 0, 0, 0, 0);
-    // std::this_thread::sleep_for(std::chrono::milliseconds(500));
   }
 
   err0 = robot.MoveJ(&pj1, &desc_pos1, tool, user, vel, acc, ovl, &epos, blendT,
