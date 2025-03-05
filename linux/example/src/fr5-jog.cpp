@@ -50,7 +50,7 @@ int main(int argc, char **argv) {
   robot.GetRobotCurJointsConfig(&config);
 
   robot.SetSpeed(50);
-  // printf("\n");
+  printf("\n");
 
   // robot.GetActualTCPPose(flag, &tcp);
   // printf("GetActualTCPPose after:\t\t%f,%f,%f,%f,%f,%f\n", tcp.tran.x,
