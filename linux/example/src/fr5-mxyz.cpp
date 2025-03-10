@@ -14,10 +14,7 @@
 using namespace std;
 
 int main(int argc, char **argv) {
-  if (argc != 4) {
-    printf("Usage: %s X Y Z \n", argv[0]);
-    return 1;
-  }
+
 
   int xpos = atoi(argv[1]);
   int ypos = atoi(argv[2]);
@@ -41,6 +38,20 @@ int main(int argc, char **argv) {
   uint8_t flag = 0;
   uint8_t search = 0;
   int config = -1; // default = -1
+
+  
+  if (argc != 4) {
+    printf("Usage: %s X Y Z \n", argv[0]);
+    printf("\n");
+
+    robot.GetRobotRealTimeState(&rt_data);
+    printf("GetRobotRealTimeState :\t\t%f, %f, %f, %f, %f, %f\n",
+           rt_data.tl_cur_pos[0], rt_data.tl_cur_pos[1], rt_data.tl_cur_pos[2],
+           rt_data.tl_cur_pos[3], rt_data.tl_cur_pos[4], rt_data.tl_cur_pos[5]);
+
+    return 1;
+  }
+
 
   //   robot.SetLoadWeight(0.5);
   //   coord.x = 0.0;
