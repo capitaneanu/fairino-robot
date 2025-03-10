@@ -15,7 +15,6 @@ using namespace std;
 
 int main(int argc, char **argv) {
 
-
   int xpos = atoi(argv[1]);
   int ypos = atoi(argv[2]);
   int zpos = atoi(argv[3]);
@@ -39,7 +38,6 @@ int main(int argc, char **argv) {
   uint8_t search = 0;
   int config = -1; // default = -1
 
-  
   if (argc != 4) {
     printf("Usage: %s X Y Z \n", argv[0]);
     printf("\n");
@@ -51,7 +49,6 @@ int main(int argc, char **argv) {
 
     return 1;
   }
-
 
   //   robot.SetLoadWeight(0.5);
   //   coord.x = 0.0;
