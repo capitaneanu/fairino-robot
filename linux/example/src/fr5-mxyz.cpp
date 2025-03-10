@@ -15,10 +15,6 @@ using namespace std;
 
 int main(int argc, char **argv) {
 
-  int xpos = atoi(argv[1]);
-  int ypos = atoi(argv[2]);
-  int zpos = atoi(argv[3]);
-
   FRRobot robot;             // Instantiate the robot object
   robot.RPC("192.168.58.2"); // Establish a communication connection with the
                              // robot controller
@@ -43,9 +39,19 @@ int main(int argc, char **argv) {
     printf("\n");
 
     robot.GetRobotRealTimeState(&rt_data);
-    printf("GetRobotRealTimeState :\t\t%f, %f, %f, %f, %f, %f\n",
+    printf("GetRobotRealTimeState :\t\tX %f, Y %f, Z %f, RX %f, RY %f, RZ %f\n",
            rt_data.tl_cur_pos[0], rt_data.tl_cur_pos[1], rt_data.tl_cur_pos[2],
            rt_data.tl_cur_pos[3], rt_data.tl_cur_pos[4], rt_data.tl_cur_pos[5]);
+
+    return 1;
+  }
+
+  int xpos = atoi(argv[1]);
+  int ypos = atoi(argv[2]);
+  int zpos = atoi(argv[3]);
+
+  if (ypos > -220 || ypos < 220) {
+    printf("Y >220 & <-220");
 
     return 1;
   }
@@ -79,7 +85,7 @@ int main(int argc, char **argv) {
   //          tcp.tran.y, tcp.tran.z, tcp.rpy.rx, tcp.rpy.ry, tcp.rpy.rz);
 
   robot.GetRobotRealTimeState(&rt_data);
-  printf("GetRobotRealTimeState :\t\t%f, %f, %f, %f, %f, %f\n",
+  printf("GetRobotRealTimeState :\t\tX %f, Y %f, Z %f, RX %f, RY %f, RZ %f\n",
          rt_data.tl_cur_pos[0], rt_data.tl_cur_pos[1], rt_data.tl_cur_pos[2],
          rt_data.tl_cur_pos[3], rt_data.tl_cur_pos[4], rt_data.tl_cur_pos[5]);
 
