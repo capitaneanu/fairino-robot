@@ -14,12 +14,12 @@
 using namespace std;
 
 int main(int argc, char **argv) {
-  if (argc != 2) {
-    printf("Usage: %s 0 \n", argv[0]);
-    return 1;
-  }
+  // if (argc != 2) {
+  //   printf("Usage: %s 0 \n", argv[0]);
+  //   return 1;
+  // }
 
-  int cpos = atoi(argv[1]);
+  // int cpos = atoi(argv[1]);
 
   FRRobot robot;             // Instantiate the robot object
   robot.RPC("192.168.58.2"); // Establish a communication connection with the
@@ -67,12 +67,12 @@ int main(int argc, char **argv) {
   j1.jPos[4] = 65.601;
   j1.jPos[5] = 21.277;
 
-  j2.jPos[0] = -34.08;
-  j2.jPos[1] = -93.504;
-  j2.jPos[2] = -110.073;
-  j2.jPos[3] = -66.142;
-  j2.jPos[4] = 91.713;
-  j2.jPos[5] = 21.167;
+  // j2.jPos[0] = -34.08;
+  // j2.jPos[1] = -93.504;
+  // j2.jPos[2] = -110.073;
+  // j2.jPos[3] = -66.142;
+  // j2.jPos[4] = 91.713;
+  // j2.jPos[5] = 21.167;
 
   j3.jPos[0] = -18.239;
   j3.jPos[1] = -104.603;
@@ -113,14 +113,48 @@ int main(int argc, char **argv) {
   robot.SetSpeed(40);
   printf("\n");
 
+  int ret = 0;
+
   // for (int i = 0; i < 6; i++)	{ printf("J(%d) %f\t", i + 1,
   // j.jPos[i]); } printf("\n\n")
 
-  // int ret0 = robot.GetForwardKin(&j, &desc_pos); // The forward kinematic
-  // interface can be used to solve Cartesian space coordinates with only joint
-  // positions printf("fwd kinematics  : x %f\t y %f\t z %f\t rx %f\t ry %f\t rz
-  // %f \n", desc_pos.tran.x, desc_pos.tran.y, desc_pos.tran.z, desc_pos.rpy.rx,
-  // desc_pos.rpy.ry, desc_pos.rpy.rz); printf("\n");
+  ret = robot.GetForwardKin(&j, &desc_pos);
+  // The forward kinematic interface can be used to solve Cartesian space
+  // coordinates with only joint positions
+  printf("GetForwardKin: x %f\t y %f\t z %f\t rx %f\t ry %f\t rz %f \n",
+         desc_pos.tran.x, desc_pos.tran.y, desc_pos.tran.z, desc_pos.rpy.rx,
+         desc_pos.rpy.ry, desc_pos.rpy.rz);
+
+  ret = robot.GetInverseKin(0, &desc_pos, -1, &j4);
+
+  printf("JointPos: J1 %f\t J2 %f\t J3 %f\t J4 %f\t J5 %f\t J6 %f\t "
+         "\n",
+         j4.jPos[0], j4.jPos[1], j4.jPos[2], j4.jPos[3], j4.jPos[4],
+         j4.jPos[5]);
+  printf("\n");
+
+  robot.GetActualJointPosDegree(flag, &j2);
+  printf("GetActualJointPosDegree: J1 %f\t J2 %f\t J3 %f\t J4 %f\t J5 %f\t J6 "
+         "%f\t "
+         "\n",
+         j2.jPos[0], j2.jPos[1], j2.jPos[2], j2.jPos[3], j2.jPos[4],
+         j2.jPos[5]);
+
+  robot.GetActualTCPPose(flag, &tcp);
+  printf("GetActualTCPPose:\t\t%f,%f,%f,%f,%f,%f\n", tcp.tran.x, tcp.tran.y,
+         tcp.tran.z, tcp.rpy.rx, tcp.rpy.ry, tcp.rpy.rz);
+
+  robot.GetActualToolFlangePose(flag, &tcp);
+  printf("GetActualToolFlangePose:\t\t%f,%f,%f,%f,%f,%f\n", tcp.tran.x,
+         tcp.tran.y, tcp.tran.z, tcp.rpy.rx, tcp.rpy.ry, tcp.rpy.rz);
+
+  ret = robot.GetInverseKin(0, &tcp, -1, &j4);
+
+  printf("GetInverseKin: J1 %f\t J2 %f\t J3 %f\t J4 %f\t J5 %f\t J6 %f\t "
+         "\n",
+         j4.jPos[0], j4.jPos[1], j4.jPos[2], j4.jPos[3], j4.jPos[4],
+         j4.jPos[5]);
+  printf("\n");
 
   // int ret1 = robot.GetForwardKin(&j1, &desc_pos1); // The forward kinematic
   // interface can be used to solve Cartesian space coordinates with only joint
@@ -152,22 +186,23 @@ int main(int argc, char **argv) {
   // int err0 = robot.MoveJ(&j, &desc_pos, tool, user, vel, acc, ovl, &epos,
   // blendT, flag, &offset_pos1); printf("movej errcode:%d \n", err0);
 
-  for (int i = 0; i < 4; i++) {
-    robot.GetActualTCPPose(flag, &tcp);
-    printf("tcp pose:%f,%f,%f,%f,%f,%f\n", tcp.tran.x, tcp.tran.y, tcp.tran.z,
-           tcp.rpy.rx, tcp.rpy.ry, tcp.rpy.rz);
+  // for (int i = 0; i < 4; i++) {
+  //   robot.GetActualTCPPose(flag, &tcp);
+  //   printf("tcp pose:%f,%f,%f,%f,%f,%f\n", tcp.tran.x, tcp.tran.y,
+  //   tcp.tran.z,
+  //          tcp.rpy.rx, tcp.rpy.ry, tcp.rpy.rz);
 
-    desc_pos1.tran.x = tcp.tran.x + cpos; // + 10
-    desc_pos1.tran.y = tcp.tran.y;
-    desc_pos1.tran.z = tcp.tran.z;
-    desc_pos1.rpy.rx = tcp.rpy.rx;
-    desc_pos1.rpy.ry = tcp.rpy.ry;
-    desc_pos1.rpy.rz = tcp.rpy.rz;
+  //   desc_pos1.tran.x = tcp.tran.x + cpos; // + 10
+  //   desc_pos1.tran.y = tcp.tran.y;
+  //   desc_pos1.tran.z = tcp.tran.z;
+  //   desc_pos1.rpy.rx = tcp.rpy.rx;
+  //   desc_pos1.rpy.ry = tcp.rpy.ry;
+  //   desc_pos1.rpy.rz = tcp.rpy.rz;
 
-    robot.MoveCart(&desc_pos1, tool, user, vel, acc, ovl, blendT, config);
+  //   robot.MoveCart(&desc_pos1, tool, user, vel, acc, ovl, blendT, config);
 
-    robot.WaitMs(50);
-  }
+  //   robot.WaitMs(50);
+  // }
 
   // int err1 = robot.MoveJ(&j1, &desc_pos1, tool, user, vel, acc, ovl, &epos,
   // blendT, flag, &offset_pos); printf("movej errcode:%d\n", err1);

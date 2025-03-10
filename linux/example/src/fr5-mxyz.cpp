@@ -65,25 +65,28 @@ int main(int argc, char **argv) {
   robot.SetSpeed(50);
   printf("\n");
 
+  //   robot.GetActualTCPPose(flag, &tcp);
+  //   robot.GetActualToolFlangePose(flag, &tcp);
+  //   printf("GetActualTCPPose after:\t\t%f,%f,%f,%f,%f,%f\n", tcp.tran.x,
+  //          tcp.tran.y, tcp.tran.z, tcp.rpy.rx, tcp.rpy.ry, tcp.rpy.rz);
+
   robot.GetRobotRealTimeState(&rt_data);
-  printf("GetRobotRealTimeState :\t\t%f,%f,%f,%f,%f,%f\n",
+  printf("GetRobotRealTimeState :\t\t%f, %f, %f, %f, %f, %f\n",
          rt_data.tl_cur_pos[0], rt_data.tl_cur_pos[1], rt_data.tl_cur_pos[2],
          rt_data.tl_cur_pos[3], rt_data.tl_cur_pos[4], rt_data.tl_cur_pos[5]);
 
-  desc_rt.tran.x = rt_data.tl_cur_pos[0] + xpos;
-  desc_rt.tran.y = rt_data.tl_cur_pos[1] + ypos;
-  desc_rt.tran.z = rt_data.tl_cur_pos[2] + zpos;
+  desc_rt.tran.x = xpos;
+  desc_rt.tran.y = ypos;
+  desc_rt.tran.z = zpos;
+  // desc_rt.tran.x = rt_data.tl_cur_pos[0] + xpos;
+  // desc_rt.tran.y = rt_data.tl_cur_pos[1] + ypos;
+  // desc_rt.tran.z = rt_data.tl_cur_pos[2] + zpos;
   desc_rt.rpy.rx = rt_data.tl_cur_pos[3];
   desc_rt.rpy.ry = rt_data.tl_cur_pos[4];
   desc_rt.rpy.rz = rt_data.tl_cur_pos[5];
 
   robot.MoveCart(&desc_rt, tool, user, vel, acc, ovl, blendT, config);
   robot.WaitMs(100);
-
-  //   robot.GetActualTCPPose(flag, &tcp);
-  //   robot.GetActualToolFlangePose(flag, &tcp);
-  //   printf("GetActualTCPPose after:\t\t%f,%f,%f,%f,%f,%f\n", tcp.tran.x,
-  //          tcp.tran.y, tcp.tran.z, tcp.rpy.rx, tcp.rpy.ry, tcp.rpy.rz);
 
   //   desc_pos.tran.x = tcp.tran.x + xpos;
   //   desc_pos.tran.y = tcp.tran.y + ypos;
@@ -104,6 +107,12 @@ int main(int argc, char **argv) {
   //   flange.tran.x,
   //          flange.tran.y, flange.tran.z, flange.rpy.rx, flange.rpy.ry,
   //          flange.rpy.rz);
+
+  robot.WaitMs(1000);
+  robot.GetRobotRealTimeState(&rt_data);
+  printf("GetRobotRealTimeState :\t\t%f, %f, %f, %f, %f, %f\n",
+         rt_data.tl_cur_pos[0], rt_data.tl_cur_pos[1], rt_data.tl_cur_pos[2],
+         rt_data.tl_cur_pos[3], rt_data.tl_cur_pos[4], rt_data.tl_cur_pos[5]);
 
   return 0;
 }
