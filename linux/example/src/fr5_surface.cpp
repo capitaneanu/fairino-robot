@@ -47,7 +47,7 @@ int main(void)
        // printf("xcenter:%f,%f,%f,%f,%f,%f\n", dcenter.tran.x, dcenter.tran.y, dcenter.tran.z, dcenter.rpy.rx, dcenter.rpy.ry, dcenter.rpy.rz);
 
        robot.FT_GetForceTorqueOrigin(0, &ft);
-       printf("%f %f %f %f %f %f\n", ft.fx, ft.fy, ft.fz, ft.tx, ft.ty, ft.tz);
+       printf("FT Torque: %f %f %f %f %f %f\n", ft.fx, ft.fy, ft.fz, ft.tx, ft.ty, ft.tz);
 
        robot.WaitMs(2000);
        robot.GetRobotRealTimeState(&rt_data);
