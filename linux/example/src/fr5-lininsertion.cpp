@@ -1,14 +1,20 @@
+
+
 #include "libfairino/robot.h"
-// #include "libfairino/robot_types.h"
-#include <cstdlib>
-#include <cstring>
-#include <iostream>
+#ifdef WINDOWS_OPTION
+#include <string.h>
+#include <windows.h>
+#elif LINUX_OPTION
 #include <stdio.h>
 #include <unistd.h>
 
-// #include "FRRobot.h"
-// #include "RobotTypes.h"
-#include "libfairino/robot_error.h"
+#include <cstdlib>
+#include <cstring>
+#include <iostream>
+#endif
+
+#include <chrono>
+#include <thread>
 
 using namespace std;
 
