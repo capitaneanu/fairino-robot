@@ -31,6 +31,8 @@
 # *.out
 # *.app
 
+libfairino
+windows
 build
 .vscode
 
