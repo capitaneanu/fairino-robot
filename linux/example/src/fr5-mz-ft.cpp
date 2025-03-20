@@ -13,7 +13,8 @@
 
 using namespace std;
 
-int main(int argc, char **argv) {
+int main(int argc, char **argv)
+{
 
   FRRobot robot;             // Instantiate the robot object
   robot.RPC("192.168.58.2"); // Establish a communication connection with the
@@ -33,7 +34,7 @@ int main(int argc, char **argv) {
 
   int tool = 0; // default = 0
   int user = 0;
-  float vel = 50.0;
+  float vel = 25.0;
   float acc = 50.0;
   float ovl = 50.0;
   float blendT = 0.0;
@@ -42,11 +43,13 @@ int main(int argc, char **argv) {
   uint8_t search = 0;
   int config = -1; // default = -1
 
-  if (argc != 4) {
+  if (argc != 4)
+  {
     printf("Usage: %s X Y Z \n", argv[0]);
     printf("\n");
 
-    for (int i = 0; i < 2; i++) {
+    for (int i = 0; i < 2; i++)
+    {
       robot.GetRobotRealTimeState(&rt_data);
       printf(
           "GetRobotRealTimeState :\t\tX %f, Y %f, Z %f, RX %f, RY %f, RZ %f\n",
@@ -102,17 +105,17 @@ int main(int argc, char **argv) {
 
   robot.MoveCart(&desc_rt, tool, user, vel, acc, ovl, blendT, config);
   // robot.WaitMs(100);
-  robot.FT_Control(flag, sensor_id, select, &ft, ft_pid, adj_sign, ILC_sign,
-                   max_dis, max_ang);
-  // robot.FT_GetForceTorqueOrigin(flag, &ft);
-  // printf("%f %f %f %f %f %f\n", ft.fx, ft.fy, ft.fz, ft.tx, ft.ty, ft.tz);
 
   robot.WaitMs(4000);
+  // robot.FT_Control(flag, sensor_id, select, &ft, ft_pid, adj_sign, ILC_sign,
+  //                  max_dis, max_ang);
+  robot.FT_GetForceTorqueOrigin(flag, &ft);
+  printf("%f %f %f %f %f %f\n", ft.fx, ft.fy, ft.fz, ft.tx, ft.ty, ft.tz);
 
   // robot.FT_ComplianceStop();
-  flag = 0;
-  robot.FT_Control(flag, sensor_id, select, &ft, ft_pid, adj_sign, ILC_sign,
-                   max_dis, max_ang);
+  // flag = 0;
+  // robot.FT_Control(flag, sensor_id, select, &ft, ft_pid, adj_sign, ILC_sign,
+  //                  max_dis, max_ang);
   // robot.FT_Guard(flag, sensor_id, select, &ft, max_threshold, min_threshold);
 
   return 0;
