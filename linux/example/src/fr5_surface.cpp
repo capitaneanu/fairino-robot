@@ -40,23 +40,23 @@ int main(void)
        desc_pos0.rpy.rz = 155.0;
 
        robot.MoveCart(&desc_pos0, 0, 0, 100.0, 100.0, 100.0, -1.0, -1);
-       robot.WaitMs(4000);
+       robot.WaitMs(3000);
        robot.FT_CalCenterStart();
        robot.FT_FindSurface(rcs, dir, axis, lin_v, lin_a, maxdis, ft_goal);
        robot.FT_CalCenterEnd(&dcenter);
-       // printf("xcenter:%f,%f,%f,%f,%f,%f\n", dcenter.tran.x, dcenter.tran.y, dcenter.tran.z, dcenter.rpy.rx, dcenter.rpy.ry, dcenter.rpy.rz);
+       printf("xcenter:%f,%f,%f,%f,%f,%f\n", dcenter.tran.x, dcenter.tran.y, dcenter.tran.z, dcenter.rpy.rx, dcenter.rpy.ry, dcenter.rpy.rz);
 
        robot.FT_GetForceTorqueOrigin(0, &ft);
        printf("FT Torque: %f %f %f %f %f %f\n", ft.fx, ft.fy, ft.fz, ft.tx, ft.ty, ft.tz);
 
-       robot.WaitMs(2000);
+       robot.WaitMs(1000);
        robot.GetRobotRealTimeState(&rt_data);
        printf(
            "Coordinates: %f, %f, %f, %f, %f, %f\n",
            rt_data.tl_cur_pos[0], rt_data.tl_cur_pos[1], rt_data.tl_cur_pos[2],
            rt_data.tl_cur_pos[3], rt_data.tl_cur_pos[4], rt_data.tl_cur_pos[5]);
 
-       robot.WaitMs(10000);
+       robot.WaitMs(2000);
        desc_pos0.tran.x = rt_data.tl_cur_pos[0];
        desc_pos0.tran.y = rt_data.tl_cur_pos[1];
        desc_pos0.tran.z = rt_data.tl_cur_pos[2] + 50;
