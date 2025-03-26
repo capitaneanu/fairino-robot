@@ -96,15 +96,16 @@ int main(int argc, char **argv) {
   // robot.WaitMs(100);
 
   robot.GetRobotRealTimeState(&rt_data);
-  printf("GetRobotRealTimeState :\t\tX %f, Y %f, Z %f, RX %f, RY %f, RZ %f\n",
-         rt_data.tl_cur_pos[0], rt_data.tl_cur_pos[1], rt_data.tl_cur_pos[2],
-         rt_data.tl_cur_pos[3], rt_data.tl_cur_pos[4], rt_data.tl_cur_pos[5]);
-  desc_rt.tran.x = xpos;
-  desc_rt.tran.y = ypos;
-  desc_rt.tran.z = zpos;
-  // desc_rt.tran.x = rt_data.tl_cur_pos[0] + xpos;
-  // desc_rt.tran.y = rt_data.tl_cur_pos[1] + ypos;
+  // printf("GetRobotRealTimeState :\t\tX %f, Y %f, Z %f, RX %f, RY %f, RZ %f\n",
+  //        rt_data.tl_cur_pos[0], rt_data.tl_cur_pos[1], rt_data.tl_cur_pos[2],
+  //        rt_data.tl_cur_pos[3], rt_data.tl_cur_pos[4], rt_data.tl_cur_pos[5]);
+  // desc_rt.tran.x = xpos;
+  // desc_rt.tran.y = ypos;
+  // desc_rt.tran.z = zpos;
+  desc_rt.tran.x = rt_data.tl_cur_pos[0] + xpos;
+  desc_rt.tran.y = rt_data.tl_cur_pos[1] + ypos;
   // desc_rt.tran.z = rt_data.tl_cur_pos[2] + zpos;
+  desc_rt.tran.z = rt_data.tl_cur_pos[2];
   desc_rt.rpy.rx = rt_data.tl_cur_pos[3];
   desc_rt.rpy.ry = rt_data.tl_cur_pos[4];
   desc_rt.rpy.rz = rt_data.tl_cur_pos[5];
