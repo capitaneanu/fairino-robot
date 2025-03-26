@@ -25,6 +25,8 @@ int main(int argc, char **argv)
     ROBOT_STATE_PKG rt_data = {};
     DescPose desc_rt, tcp;
     memset(&desc_rt, 0, sizeof(DescPose));
+    ForceTorque ft;
+    memset(&ft, 0, sizeof(ForceTorque));
 
     int tool = 0; // default = 0
     int user = 0;
@@ -87,16 +89,18 @@ int main(int argc, char **argv)
     int rcs = 1;
     uint8_t dir = 2;
     uint8_t axis = 3;
-    float lin_v = 50.0;
+    float lin_v = 30.0;
     float lin_a = 0.0;
     float maxdis = 400.0;
-    float ft_goal = -4.0;
+    float ft_goal = -2.0;
 
     robot.WaitMs(2000);
     robot.FT_CalCenterStart();
     robot.FT_FindSurface(rcs, dir, axis, lin_v, lin_a, maxdis, ft_goal);
 
     robot.WaitMs(1000);
+    robot.FT_GetForceTorqueOrigin(0, &ft);
+    printf("FT Torque:   %f, %f, %f, %f, %f, %f\n", ft.fx, ft.fy, ft.fz, ft.tx, ft.ty, ft.tz);
     robot.GetRobotRealTimeState(&rt_data);
     printf("Coordinates: %f, %f, %f, %f, %f, %f\n",
            rt_data.tl_cur_pos[0], rt_data.tl_cur_pos[1], rt_data.tl_cur_pos[2],
@@ -104,7 +108,29 @@ int main(int argc, char **argv)
 
     desc_rt.tran.x = rt_data.tl_cur_pos[0];
     desc_rt.tran.y = rt_data.tl_cur_pos[1];
-    desc_rt.tran.z = rt_data.tl_cur_pos[2] + 50;
+    desc_rt.tran.z = rt_data.tl_cur_pos[2] + 4;
+    desc_rt.rpy.rx = rt_data.tl_cur_pos[3];
+    desc_rt.rpy.ry = rt_data.tl_cur_pos[4];
+    desc_rt.rpy.rz = rt_data.tl_cur_pos[5];
+
+    robot.WaitMs(1000);
+    robot.MoveCart(&desc_rt, tool, user, vel, acc, ovl, blendT, config);
+    robot.WaitMs(100);
+
+    uint8_t status = 0;
+    uint8_t smooth = 0;
+    uint8_t block = 0;
+    status = 1;
+    robot.SetDO(7, status, smooth, block);
+
+    robot.GetRobotRealTimeState(&rt_data);
+    printf("Coordinates: %f, %f, %f, %f, %f, %f\n",
+           rt_data.tl_cur_pos[0], rt_data.tl_cur_pos[1], rt_data.tl_cur_pos[2],
+           rt_data.tl_cur_pos[3], rt_data.tl_cur_pos[4], rt_data.tl_cur_pos[5]);
+
+    desc_rt.tran.x = rt_data.tl_cur_pos[0];
+    desc_rt.tran.y = rt_data.tl_cur_pos[1];
+    desc_rt.tran.z = rt_data.tl_cur_pos[2] + 46;
     desc_rt.rpy.rx = rt_data.tl_cur_pos[3];
     desc_rt.rpy.ry = rt_data.tl_cur_pos[4];
     desc_rt.rpy.rz = rt_data.tl_cur_pos[5];
@@ -112,6 +138,10 @@ int main(int argc, char **argv)
     robot.WaitMs(5000);
     robot.MoveCart(&desc_rt, tool, user, vel, acc, ovl, blendT, config);
     robot.WaitMs(100);
+
+    robot.WaitMs(2000);
+    status = 0;
+    robot.SetDO(7, status, smooth, block);
 
     return 0;
 }
