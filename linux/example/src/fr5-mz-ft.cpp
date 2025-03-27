@@ -13,8 +13,7 @@
 
 using namespace std;
 
-int main(int argc, char **argv)
-{
+int main(int argc, char **argv) {
 
   FRRobot robot;             // Instantiate the robot object
   robot.RPC("192.168.58.2"); // Establish a communication connection with the
@@ -43,13 +42,11 @@ int main(int argc, char **argv)
   uint8_t search = 0;
   int config = -1; // default = -1
 
-  if (argc != 4)
-  {
+  if (argc != 4) {
     printf("Usage: %s X Y Z \n", argv[0]);
     printf("\n");
 
-    for (int i = 0; i < 2; i++)
-    {
+    for (int i = 0; i < 2; i++) {
       robot.GetRobotRealTimeState(&rt_data);
       printf(
           "GetRobotRealTimeState :\t\tX %f, Y %f, Z %f, RX %f, RY %f, RZ %f\n",
