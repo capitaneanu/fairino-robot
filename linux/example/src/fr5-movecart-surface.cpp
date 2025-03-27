@@ -52,9 +52,9 @@ int main(int argc, char **argv) {
     printf("\n");
 
     robot.GetRobotRealTimeState(&rt_data);
-    printf("GetRobotRealTimeState :\t\tX %f, Y %f, Z %f, RX %f, RY %f, RZ %f\n",
-           rt_data.tl_cur_pos[0], rt_data.tl_cur_pos[1], rt_data.tl_cur_pos[2],
-           rt_data.tl_cur_pos[3], rt_data.tl_cur_pos[4], rt_data.tl_cur_pos[5]);
+  printf("Coordinates: X %12f, Y %12f, Z %12f, RX %12f, RY %12f, RZ %12f\n", rt_data.tl_cur_pos[0],
+         rt_data.tl_cur_pos[1], rt_data.tl_cur_pos[2], rt_data.tl_cur_pos[3],
+         rt_data.tl_cur_pos[4], rt_data.tl_cur_pos[5]);
 
     return 1;
   }
@@ -72,7 +72,7 @@ int main(int argc, char **argv) {
   //   robot.GetActualTCPPose(flag, &tcp);
   //   robot.GetActualToolFlangePose(flag, &tcp);
   robot.GetRobotRealTimeState(&rt_data);
-  printf("Coordinates: %f, %f, %f, %f, %f, %f\n", rt_data.tl_cur_pos[0],
+  printf("Coordinates: X %12f, Y %12f, Z %12f, RX %12f, RY %12f, RZ %12f\n", rt_data.tl_cur_pos[0],
          rt_data.tl_cur_pos[1], rt_data.tl_cur_pos[2], rt_data.tl_cur_pos[3],
          rt_data.tl_cur_pos[4], rt_data.tl_cur_pos[5]);
 
@@ -99,11 +99,11 @@ int main(int argc, char **argv) {
 
   // robot.WaitMs(500);
   robot.FT_GetForceTorqueOrigin(0, &ft);
-  printf("FT Torque:   %f, %f, %f, %f, %f, %f\n", ft.fx, ft.fy, ft.fz, ft.tx,
+  printf("FT Torque:  FX %12f, FY %12f, FZ %12f, TX %12f, TY %12f, TZ %12f\n", ft.fx, ft.fy, ft.fz, ft.tx,
          ft.ty, ft.tz);
 
   // robot.GetRobotRealTimeState(&rt_data);
-  // printf("Coordinates: %f, %f, %f, %f, %f, %f\n",
+  // printf("Coordinates:  %12f,  %12f,  %12f,  %12f,  %12f,  %12f\n",
   //        rt_data.tl_cur_pos[0], rt_data.tl_cur_pos[1], rt_data.tl_cur_pos[2],
   //        rt_data.tl_cur_pos[3], rt_data.tl_cur_pos[4],
   //        rt_data.tl_cur_pos[5]);
@@ -124,7 +124,7 @@ int main(int argc, char **argv) {
 
   robot.WaitMs(500);
   robot.GetRobotRealTimeState(&rt_data);
-  printf("Coordinates: %f, %f, %f, %f, %f, %f\n", rt_data.tl_cur_pos[0],
+  printf("Coordinates: X %12f, Y %12f, Z %12f, RX %12f, RY %12f, RZ %12f\n", rt_data.tl_cur_pos[0],
          rt_data.tl_cur_pos[1], rt_data.tl_cur_pos[2], rt_data.tl_cur_pos[3],
          rt_data.tl_cur_pos[4], rt_data.tl_cur_pos[5]);
 
